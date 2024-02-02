@@ -1,0 +1,38 @@
+            - name: faros-cicd-github-action
+  # You may pin to the exact commit or the version.
+  # uses: faros-ai/faros-cicd-github-action@b9cbbed1ce7036e22deb348b320ba5c7247ba589
+  uses: faros-ai/faros-cicd-github-action@v3.0.6
+  with:
+    # Faros API Key
+    api-key: 
+    # Which CI/CD event the data is for. Can be either CI or CD
+    event: 
+    # Unique identifier of the job executing the CI or CD process. (Default: GITHUB_RUN_ID)
+    run-id: # optional
+    # CI or CD step's job run status. (Success, Failed, Canceled)
+    run-status: 
+    # Manually associate the commit to a specific pull request number
+    pull-request-number: # optional
+    # The URI of the deployment. Required for CD events. (source://app/env/deploy)
+    deploy: # optional
+    # The status of the deployment. Required for CD events. (Success, Failed, Canceled)
+    deploy-status: # optional
+    # The platform the application is being deployed on. (e.g. ECS, K8s)
+    deploy-app-platform: # optional
+    # Deployment process start time in millis. (e.g. 1626804346019)
+    deploy-started-at: # optional
+    # Deployment process end time in millis. (e.g. 1626804346019)
+    deploy-ended-at: # optional
+    # The URI of the artifact that was built or deployed. (source://org/repo/artifact)
+    artifact: # optional
+    # Job run start time in millis. (e.g. 1626804346019)
+    run-started-at: # optional
+    # Job run end time in millis. (e.g. 1626804346019)
+    run-ended-at: # optional
+    # Unique identifier of the pipeline.
+    pipeline-id: # optional
+    # Faros API URL.
+    api-url: # optional
+    # Graph name to use when invoking Faros API. (Default: 'default')
+    graph: # optional
+          
